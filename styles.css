@@ -250,10 +250,10 @@ button, .task-button {
 .task-description {
     flex: 1;
     margin: 0 10px;
-    font-size: 16px;
-    font-style: italic;
-    font-weight: 700;
-    color: #ddd;
+    font-size: 22px;
+    font-style:unset;
+    font-weight: 900;
+    color: #e0e0e0;
 }
 
 .task-button {
@@ -300,10 +300,7 @@ button, .task-button {
 }
 
 @media (max-width: 600px) {
-    .main-container, .task-container {
-        width: 100%;
-        height: auto; /* Высота автоматически подстраивается под содержимое */
-    }
+  
 
     .coin-info {
         margin-top: 20px;
@@ -314,32 +311,11 @@ button, .task-button {
         padding: 10px 20px;
     }
 
-    .task-item {
-        flex-direction: column; /* Задания располагаются вертикально на узких экранах */
-        align-items: flex-start;
-    }
-
-    .task-description {
-        font-size: 14px;
-        margin: 5px 0;
-    }
-
-    .task-button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
-
-    .taskbottom-nav img {
-        width: 30px;
-        height: 30px;
-    }
+   
 }
 
 @media (min-width: 601px) {
-    .main-container, .task-container {
-        width: 90%;
-        height: calc(85vh - 60px); /* Высота контейнера для больших экранов */
-    }
+    
 
     .coin-info {
         margin-top: 300px;
@@ -350,21 +326,5 @@ button, .task-button {
         padding: 15px 25px;
     }
 
-    .task-item {
-        flex-direction: row; /* Задания располагаются горизонтально на широких экранах */
-    }
-
-    .task-description {
-        font-size: 16px;
-    }
-
-    .task-button {
-        font-size: 1rem;
-        padding: 10px 20px;
-    }
-
-    .taskbottom-nav img {
-        width: 40px;
-        height: 40px;
-    }
+   
 }
