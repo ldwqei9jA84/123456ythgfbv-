@@ -192,7 +192,7 @@ button, .task-button {
 .coin-label {
     font-size: 1.5rem; /* Размер шрифта для текста "Balance" */
     color: #ffffff;
-    margin-bottom: 10px; /* Расстояние между текстом и количеством монет */
+    margin-bottom: 20px; /* Расстояние между текстом и количеством монет */
 }
 
 .coin-count {
@@ -200,6 +200,7 @@ button, .task-button {
     font-weight: bold;
     color: #ffffff;
     margin-top: 10px; /* Расстояние между текстом и количеством монет */
+    margin-bottom: 90px;
 }
 
 
@@ -298,3 +299,72 @@ button, .task-button {
     margin-right: 0; /* Правая иконка */
 }
 
+@media (max-width: 600px) {
+    .main-container, .task-container {
+        width: 100%;
+        height: auto; /* Высота автоматически подстраивается под содержимое */
+    }
+
+    .coin-info {
+        margin-top: 20px;
+    }
+
+    .farm-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .task-item {
+        flex-direction: column; /* Задания располагаются вертикально на узких экранах */
+        align-items: flex-start;
+    }
+
+    .task-description {
+        font-size: 14px;
+        margin: 5px 0;
+    }
+
+    .task-button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+
+    .taskbottom-nav img {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (min-width: 601px) {
+    .main-container, .task-container {
+        width: 90%;
+        height: calc(85vh - 60px); /* Высота контейнера для больших экранов */
+    }
+
+    .coin-info {
+        margin-top: 300px;
+    }
+
+    .farm-button {
+        font-size: 1.2rem;
+        padding: 15px 25px;
+    }
+
+    .task-item {
+        flex-direction: row; /* Задания располагаются горизонтально на широких экранах */
+    }
+
+    .task-description {
+        font-size: 16px;
+    }
+
+    .task-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .taskbottom-nav img {
+        width: 40px;
+        height: 40px;
+    }
+}
